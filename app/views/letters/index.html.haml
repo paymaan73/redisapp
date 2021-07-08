@@ -1,0 +1,8 @@
+.col-md-9
+  %h1 Letter Data!
+  - @letters.each do |letter|
+    .slide
+      %strong= letter.name
+      %em= letter.score
+.col-md-4
+  =render "top"
